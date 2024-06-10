@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE entries[
+<!ELEMENT entries (entry+)>
+<!ELEMENT entry (Name,PhoneNumber,city)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Gender (male| female)>
+<!ELEMENT PhoneNumber (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+
+<!ATTLIST entries type CDATA #REQUIRED>
+]>
+<entries type ="example">
+<entry>
+    <Name>Apeksha</Name>
+    <gender>
+        <male>male</male>
+        <female>female</female>
+    </gender>
+    <PhoneNumber area-code="+977">8765</PhoneNumber>
+    <city>kathmandu</city>
+
+</entry>
+<entry>
+    <Name>Dipika Dhungana</Name>
+    <gender>
+        <male>male</male>
+        <female>female</female>
+    </gender>
+    <PhoneNumber area-code="+977">876</PhoneNumber>
+    <city>kathmandu</city>
+    
+
+</entry>
+</entries>
